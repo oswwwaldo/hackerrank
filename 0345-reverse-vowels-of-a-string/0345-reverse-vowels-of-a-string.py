@@ -6,7 +6,7 @@ class Solution:
         reversed_text: str = ""
 
         vowels_found: list[str] = "".join(filter(lambda char: char in vowels, word))
-        reversed_vowels: list[str] = vowels_found[::-1]
+        reversed_vowels: list[str] = list(reversed(vowels_found))
         vowel_index: int = 0
 
         for letter in word:
